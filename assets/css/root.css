@@ -4,13 +4,13 @@
   --spaceSmmd: 35px;
   --spaceMd: 50px;
   --spaceLg: 65px;
-  --mainBrandColour: rgb(36, 124, 255);
-  --bgColour1: white; /**/
-  --bgColour2: rgb(236 236 236);  /**/
-  --textColour1: black;  /**/
-  --textColour2: rgb(85, 85, 85);  /**/
+  --mainBrandColour: #004E36;
+  --bgColour1: #F7F6F4; 
+  --bgColour2: #E5E7EB;
+  --bgColour3: #EEEDEB ;
+  --textColour1: #282828;  
   --maxW: 80rem;
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-  --headerFont: "Inter", system-ui, sans-serif; /**/
-  --bodyFont: "Inter", system-ui, sans-serif; /**/
+  --headerFont: "Inter", system-ui, sans-serif; 
+  --bodyFont: "Inter", system-ui, sans-serif; 
 }

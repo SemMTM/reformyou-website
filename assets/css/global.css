@@ -1,11 +1,27 @@
 /* Fonts */
-/* poppins-regular - latin */
+/* inter */
 @font-face {
   font-display: swap; 
-  font-family: 'Poppins'; /* Desired font name */
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/poppins-v23-latin-regular.woff2') format('woff2'); 
+  src: url('/assets/fonts/inter-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/inter-semibold.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/inter-bold.woff2') format('woff2'); 
 }
 
 /* visible-only-on-focus skip link */
@@ -243,9 +259,9 @@ h3 {
   transform: translateX(-50%);
   width: 100%;
   background: var(--bgColour2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  padding: 0.4rem;
+  padding: 0.6rem 0.8rem;
 }
 
 .nav1-container {
@@ -254,21 +270,32 @@ h3 {
   justify-content: space-between;
 }
 
+.nav1-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .nav1-ul li a {
-  font-family: var(--headerFont);
-  font-weight: 500;
+  font-family: var(--bodyFont);
+  font-weight: 300;
   color: var(--textColour1);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav1-logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--textColour1);
-  text-decoration: none;
-  font-family: var(--headerFont);
-  display: flex;
-  align-items: center;
+  height: clamp(2rem, 6.4vw, 3rem);
+  justify-content: center;
+  padding: 0;
+  width: auto;
+  z-index: 10;
+}
+
+.nav1-logo img {
+  height: 100%;
+  object-fit: contain;
+  width: auto;
 }
 
 .nav1-toggle {
@@ -374,7 +401,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.15); 
   opacity: 0;
   visibility: hidden;
   transition:
@@ -430,7 +457,6 @@ h3 {
     flex-direction: row;
     gap: 1.5rem;
     padding: 0;
-    font-size: 0.9rem;
   }
 
   .header-btn {
@@ -445,14 +471,13 @@ h3 {
     background-color: var(--bgColour2);
     transform: scaleY(0);
     transform-origin: top;
-    transition: opacity .3s transform .4s;
+    transition: opacity .3s, transform .4s;
     overflow: hidden;
     position: absolute;
     box-sizing: border-box;
     padding-bottom: 1rem;
     left: 0;
     top: 58px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   }
 
   .nav1-ul {
@@ -481,10 +506,7 @@ h3 {
   }
 
   .nav1-ul-wrapper .header-btn .cta-button {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 /* ==== Nav1 Component Styles End ==== */

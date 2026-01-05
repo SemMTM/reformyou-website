@@ -256,7 +256,7 @@ h3 {
   background: var(--bgColour2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  padding: 0.6rem 0.8rem;
+  padding: 0.1rem 0.8rem;
 }
 
 .nav1-container {
@@ -280,11 +280,12 @@ h3 {
 }
 
 .nav1-logo {
-  height: clamp(2rem, 6.4vw, 3rem);
+  height: 60px;
   justify-content: center;
   padding: 0;
   width: auto;
   z-index: 10;
+  display: block;
 }
 
 .nav1-logo img {
@@ -567,6 +568,11 @@ h3 {
   line-height: 1.4;
 }
 
+.footer-subline {
+  max-width: 12rem;
+  font-size: 0.85rem;
+}
+
 /* Columns */
 .footer1-columns {
   display: flex;
@@ -602,17 +608,18 @@ h3 {
 .footer1-contact .icon {
   height: 20px;
   width: 20px;
+  transition: fill 0.5s;
 }
 
 .footer1-socials .icon:hover {
-  fill: #6fddff;
+  fill: #00805b;
   transition: fill 0.5s;
 }
 
 footer a {
   color: var(--textColour1);
   text-decoration: none;
-  transition: color 0.5s;
+  transition: color 0.5s, fill 0.5s;
 }
 
 .footer1-links a:hover {
@@ -624,7 +631,7 @@ footer a {
   border-top: 1px solid #333;
   padding-top: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;

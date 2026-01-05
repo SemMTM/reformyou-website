@@ -88,6 +88,12 @@
   fill: #C9A961;
 }
 
+@media (max-width: 550px) {
+  .stats-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
 /* ============================
    BUILT FOR SECTION
 ============================ */
@@ -109,7 +115,7 @@
 }
 
 .built-for-text {
-  max-width: 480px;
+  max-width: 440px;
 }
 
 .built-for-intro {
@@ -172,19 +178,9 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .built-for-grid {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
+@media (max-width: 1000px) {
   .built-for-text {
-    max-width: 100%;
-  }
-
-  .built-for-image-card {
-    max-width: 360px;
+    max-width: 550px;
   }
 }
 
@@ -250,6 +246,22 @@
 /* CTA */
 .client-results-cta {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .client-results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .client-result-card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .client-results-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 /* ============================
@@ -352,17 +364,9 @@
 }
 
 /* Responsive tweak */
-@media (max-width: 768px) {
-  #coaching-method {
-    text-align: left;
-  }
-
-  .coaching-method-heading {
-    text-align: center;
-  }
-
-  .coaching-cta {
-    text-align: center;
+@media (max-width: 550px) {
+  .coaching-method-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
@@ -399,7 +403,7 @@
 }
 
 .about-coach-content {
-  max-width: 520px;
+  max-width: 440px;
 }
 
 .about-coach-heading {
@@ -438,18 +442,13 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .about-coach-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (max-width: 1000px) {
   .about-coach-content {
-    max-width: 100%;
+    max-width: 550px;
   }
 
-  .about-coach-heading {
-    text-align: left;
+  .about-coach-image-card {
+    max-width: 400px;
   }
 }
 

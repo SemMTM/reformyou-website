@@ -656,5 +656,12 @@ footer a {
   color: var(--mainBrandColour);
   transition: color 0.3s;
 }
+
+@media (max-width: 425px) {
+  .footer1-columns {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 /* footer1 Component Styles End */
 /* footer1 Component Styles End */

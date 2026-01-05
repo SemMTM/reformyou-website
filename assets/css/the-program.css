@@ -82,7 +82,7 @@
   width: 60px;
   height: 4px;
   background-color: var(--mainBrandColour);
-  margin: 0 auto var(--spaceMd);
+  margin: 0 auto var(--spaceSmmd);
   border-radius: 2px;
 }
 
@@ -215,7 +215,7 @@
   width: 60px;
   height: 4px;
   background-color: var(--mainBrandColour);
-  margin: 0 auto var(--spaceMd);
+  margin: 0 auto var(--spaceSmmd);
   border-radius: 2px;
 }
 

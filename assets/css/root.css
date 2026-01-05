@@ -6,11 +6,11 @@
   --spaceLg: 65px;
   --mainBrandColour: #004E36;
   --bgColour1: #F7F6F4; 
-  --bgColour2: #E5E7EB;
-  --bgColour3: #EEEDEB ;
+  --bgColour2: #EEEDEB;
+  --bgColour3: #F4F2EF;
   --textColour1: #282828;  
   --maxW: 80rem;
-  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  --sectionPadding: clamp(6rem, 8vw, 7rem) 1rem;
   --headerFont: "Inter", system-ui, sans-serif; 
   --bodyFont: "Inter", system-ui, sans-serif; 
 }

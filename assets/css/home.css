@@ -1,3 +1,384 @@
-main {
-  height: 700px;
+/* ============================
+   HERO SECTION
+============================ */
+#hero {
+  position: relative;
+  padding: var(--sectionPadding);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
 }
+
+/* Background image + dark overlay */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      #1d201fda
+    ),
+    url('/assets/images/reformyou-banner.webp'); /* swap to your actual hero path */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Content layout */
+.hero-content {
+  max-width: 850px;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  margin-bottom: var(--spaceSmmd);
+  color: white;
+  background-color: #004e3786;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.hero-subtext {
+  margin: var(--spaceSmmd) 0 var(--spaceMd);
+  font-size: 1.05rem;
+  color: #e6e6e6;
+}
+
+/* ============================
+   STATS SECTION
+============================ */
+#stats {
+  background: var(--bgColour1);
+  text-align: center;
+  padding: var(--sectionPadding);
+}
+
+.stats-heading {
+  margin-bottom: var(--spaceLg);
+}
+
+.stats-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.stat-icon {
+  margin: 0 auto var(--spaceSm);
+  width: 50px;
+  height: 50px;
+}
+
+.stat-value {
+  font-size: clamp(2.3rem, 3vw, 2.8rem);
+  font-weight: 600;
+  color: var(--mainBrandColour);
+}
+
+.stat-label {
+  color: var(--textColour1);
+}
+
+.stat-item .icon {
+  fill: #C9A961;
+}
+
+/* ============================
+   BUILT FOR SECTION
+============================ */
+#built-for {
+  background: var(--bgColour3);
+  padding: var(--sectionPadding);
+}
+
+#built-for-heading {
+  margin-bottom: var(--spaceMd);
+}
+
+.built-for-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1050px;
+}
+
+.built-for-text {
+  max-width: 480px;
+}
+
+.built-for-intro {
+  margin-bottom: var(--spaceMd);
+}
+
+/* List */
+.built-for-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--spaceSm);
+}
+
+.built-for-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.built-for-item .icon {
+  height: 30px;
+  width: 30px;
+}
+
+.built-for-item .icon-circle {
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  align-self: center;
+}
+
+.built-for-item-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Image card */
+.built-for-image-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  width: 100%;
+}
+
+.built-for-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* CTA */
+.built-for-cta-wrapper {
+  text-align: center;
+  margin-top: var(--spaceLg);
+}
+
+.built-for-cta-wrapper .cta-button {
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .built-for-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .built-for-text {
+    max-width: 100%;
+  }
+
+  .built-for-image-card {
+    max-width: 360px;
+  }
+}
+
+
+/* ============================
+   CLIENT RESULTS SECTION
+============================ */
+#client-results {
+  background: var(--bgColour2);
+  padding: var(--sectionPadding);
+  text-align: center;
+}
+
+.client-results-heading {
+  max-width: 49rem;
+  margin: 0 auto var(--spaceSmmd);
+}
+
+/* Divider bar */
+.client-results-divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--mainBrandColour);
+  margin: 0 auto var(--spaceSmmd);
+  border-radius: 2px;
+}
+
+.client-results-intro {
+  max-width: 44rem;
+  margin: 0 auto var(--spaceLg);
+}
+
+/* Grid for 6 images */
+.client-results-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spaceLg);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spaceSm);
+  max-width: 60rem;
+}
+
+.client-result-item {
+  display: block;
+}
+
+.client-result-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+  height: 290px;
+}
+
+.client-result-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA */
+.client-results-cta {
+  text-align: center;
+}
+
+.client-results-cta .cta-button {
+  font-weight: 500;
+  padding: 0.7rem 1.6rem;
+}
+
+/* ============================
+   COACHING METHOD SECTION
+============================ */
+#coaching-method {
+  background: var(--bgColour1);
+  padding: var(--sectionPadding);
+  text-align: center;
+}
+
+#coaching-method .container {
+  max-width: 1050px;
+}
+
+.coaching-method-heading {
+  margin-bottom: var(--spaceLg);
+}
+
+/* Feature cards grid */
+.coaching-method-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spaceLg);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spaceSmmd);
+  max-width: var(--maxW);
+  text-align: left;
+}
+
+.coaching-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: var(--spaceSmmd);
+}
+
+.coaching-card .icon-circle {
+  margin: 0 0 var(--spaceSm) 0;
+  background: var(--mainBrandColour);
+  width: 45px;
+  height: 45px;
+}
+
+.coaching-card .icon {
+  fill: var(--bgColour1);
+}
+
+.coaching-card-title {
+  margin-bottom: var(--spaceXs);
+}
+
+.coaching-card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Testimonials */
+.coaching-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spaceSmmd);
+  margin: 0 auto var(--spaceLg);
+  max-width: var(--maxW);
+  text-align: left;
+}
+
+.coaching-testimonial {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: var(--spaceSmmd);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-stars {
+  color: #f5b301;
+  font-size: 1rem;
+  margin-bottom: var(--spaceXs);
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--spaceXs);
+}
+
+.testimonial-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* CTA */
+.coaching-cta {
+  margin-top: var(--spaceSmmd);
+  text-align: center;
+}
+
+.coaching-cta-text {
+  font-size: 0.9rem;
+  margin-bottom: var(--spaceSm);
+}
+
+.coaching-cta .cta-button {
+  margin-top: var(--spaceXs);
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  #coaching-method {
+    text-align: left;
+  }
+
+  .coaching-method-heading {
+    text-align: center;
+  }
+
+  .coaching-cta {
+    text-align: center;
+  }
+}
+

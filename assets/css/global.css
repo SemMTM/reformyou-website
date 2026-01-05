@@ -86,6 +86,7 @@ body, html {
   overflow-x: hidden;
   padding: 0;
   font-family: var(--bodyFont);
+  font-weight: 400;
   color: var(--textColour1);
   scroll-behavior: smooth;
   background-color: var(--bgColour1);
@@ -100,25 +101,26 @@ section {
   margin: 0 auto;
 }
 
-.p {
-  line-height: 1.5em;
+p {
+  line-height: 1.6;
 }
 
 h1, h2 {
   font-family: var(--headerFont);
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 1;
 }
 
 h1 {
-  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  font-size: clamp(3rem, 3.4vw, 4rem);
 }
 
 h2 {
-  font-size: clamp(1.8rem, 2.6vw, 2.2rem);
+  font-size: clamp(2rem, 2.6vw, 2.5rem);
 }
 
 h3 {
-  font-size: clamp(1.1rem, 1.8vw, 1.2rem);
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
 }
 
 .brand-accent {
@@ -132,14 +134,8 @@ h3 {
 /* Icon styles */
 .icon {
   fill: var(--mainBrandColour);
-  width: 25px;
-  height: 25px;
-}
-
-.icon {
-  fill: var(--mainBrandColour);
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 .icon-small {
@@ -153,21 +149,30 @@ h3 {
 
 /* Icon Circle */
 .icon-circle {
-  width: clamp(40px, 6.5vw, 48px);
-  height: clamp(40px, 6.5vw, 48px);
-  background: rgba(36, 124, 255, 0.192);
+  width: 55px;
+  height: 55px;
+  background: #7e7e7e17;
   color: var(--mainBrandColour);
   border-radius: 50%;
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.2rem;
+  margin: 0 auto var(--spaceXs) auto;
 }
 
 /* Button Styles */
 /* Button CSS */
-.main-btn {
+/* Button CSS */
+.cta-button {
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.3s;
+  font-family: var(--headerFont);
+  position: relative;
   background-color: var(--mainBrandColour);
   border: none;
   color: white;
@@ -175,21 +180,11 @@ h3 {
 }
 
 .sub-btn {
-  background-color: rgb(230, 230, 230);
-  border: 1px solid var(--mainBrandColour);
+  box-sizing: border-box;
+  background-color: rgba(230, 230, 230, 0);
+  border: 2px solid var(--mainBrandColour);
   color: var(--mainBrandColour);
-  font-weight: 500;
-}
-
-.cta-button {
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  display: inline-block;
-  transition: all 0.3s;
-  font-family: var(--headerFont);
-  position: relative;
+  font-weight: 400;
 }
 
 /* Animations */
@@ -216,7 +211,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #6fd1ff;
+  background: #00805b;
   transform: scaleY(0);
   transform: scaleY(0);
   transform-origin: 50% 100%;
@@ -278,7 +273,7 @@ h3 {
 
 .nav1-ul li a {
   font-family: var(--bodyFont);
-  font-weight: 300;
+  font-weight: 500;
   color: var(--textColour1);
   text-decoration: none;
   transition: color 0.3s;

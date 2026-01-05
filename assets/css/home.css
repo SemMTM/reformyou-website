@@ -53,7 +53,6 @@
 #stats {
   background: var(--bgColour1);
   text-align: center;
-  padding: var(--sectionPadding);
 }
 
 .stats-heading {
@@ -94,7 +93,6 @@
 ============================ */
 #built-for {
   background: var(--bgColour3);
-  padding: var(--sectionPadding);
 }
 
 #built-for-heading {
@@ -104,9 +102,10 @@
 .built-for-grid {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 1050px;
+  gap: var(--spaceLg);
 }
 
 .built-for-text {
@@ -133,8 +132,8 @@
 }
 
 .built-for-item .icon {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .built-for-item .icon-circle {
@@ -155,7 +154,7 @@
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
-  max-width: 420px;
+  max-width: 460px;
   width: 100%;
 }
 
@@ -170,10 +169,6 @@
 .built-for-cta-wrapper {
   text-align: center;
   margin-top: var(--spaceLg);
-}
-
-.built-for-cta-wrapper .cta-button {
-  font-weight: 500;
 }
 
 /* Responsive */
@@ -199,12 +194,11 @@
 ============================ */
 #client-results {
   background: var(--bgColour2);
-  padding: var(--sectionPadding);
   text-align: center;
 }
 
 .client-results-heading {
-  max-width: 49rem;
+  max-width: 55rem;
   margin: 0 auto var(--spaceSmmd);
 }
 
@@ -218,7 +212,7 @@
 }
 
 .client-results-intro {
-  max-width: 44rem;
+  max-width: 50rem;
   margin: 0 auto var(--spaceLg);
 }
 
@@ -258,17 +252,11 @@
   text-align: center;
 }
 
-.client-results-cta .cta-button {
-  font-weight: 500;
-  padding: 0.7rem 1.6rem;
-}
-
 /* ============================
    COACHING METHOD SECTION
 ============================ */
 #coaching-method {
-  background: var(--bgColour1);
-  padding: var(--sectionPadding);
+  background: var(--bgColour3);
   text-align: center;
 }
 
@@ -290,6 +278,7 @@
   gap: var(--spaceSmmd);
   max-width: var(--maxW);
   text-align: left;
+  padding-top: var(--spaceSm);
 }
 
 .coaching-card {
@@ -307,15 +296,12 @@
 
 .coaching-card .icon {
   fill: var(--bgColour1);
+  height: 25px;
+  width: 25px;
 }
 
 .coaching-card-title {
   margin-bottom: var(--spaceXs);
-}
-
-.coaching-card-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
 }
 
 /* Testimonials */
@@ -342,8 +328,6 @@
 }
 
 .testimonial-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
   margin-bottom: var(--spaceXs);
 }
 
@@ -379,6 +363,93 @@
 
   .coaching-cta {
     text-align: center;
+  }
+}
+
+
+/* ============================
+   ABOUT COACH SECTION
+============================ */
+#about-coach {
+  background: var(--bgColour1);
+}
+
+.about-coach-grid {
+  display: flex;
+  align-items: center;
+  gap: var(--spaceLg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-coach-image-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  max-width: 460px;
+  width: 100%;
+}
+
+.about-coach-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-coach-content {
+  max-width: 520px;
+}
+
+.about-coach-heading {
+  margin-bottom: var(--spaceMd);
+}
+
+.about-coach-body {
+  display: grid;
+  gap: var(--spaceSm);
+  margin-bottom: var(--spaceMd);
+}
+
+/* Quote */
+.about-coach-quote {
+  margin: 0;
+  padding: var(--spaceSm);
+  border-left: 3px solid var(--mainBrandColour);
+  background: #ffffff;
+}
+
+.about-coach-quote-text {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: var(--spaceSm);
+}
+
+.about-coach-quote-footer {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* CTA */
+.about-coach-cta {
+  text-align: center;
+  margin-top: var(--spaceLg);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-coach-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-coach-content {
+    max-width: 100%;
+  }
+
+  .about-coach-heading {
+    text-align: left;
   }
 }
 

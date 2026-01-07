@@ -65,6 +65,7 @@ fieldset {
   grid-template-columns: 1fr 1.4fr;
   gap: var(--spaceLg);
   align-items: start;
+  max-width: 1000px;
 }
 
 /* Left column */
@@ -76,6 +77,7 @@ fieldset {
 .contact-card {
   background: var(--bgColour2);
   padding: var(--spaceSmmd);
+  max-width: 560px;
 }
 
 .contact-card h3, p {
@@ -88,10 +90,23 @@ fieldset {
   background: #004e371a;
 }
 
+.card-email {
+  color: var(--textColour1);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.5s;
+}
+
+.card-email:hover {
+  color: var(--mainBrandColour);
+  transition: color 0.5s;
+}
+
 /* Form */
 .contact-form-wrapper {
   background: var(--bgColour2);
   padding: var(--spaceSmmd);
+  max-width: 560px;
 }
 
 .contact-form {
@@ -141,13 +156,14 @@ fieldset {
 }
 
 /* Responsive collapse */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .contact-grid {
     grid-template-columns: 1fr;
+    place-items: center;
   }
 
   .contact-side {
-    order: -1; /* forces boxes above the form */
+    order: -1; 
   }
 
   .contact-form-row {

@@ -544,10 +544,10 @@ h3 {
 #site-footer {
   color: var(--textColour1);
   padding: 2.5rem 1rem;
-  border-top: 1px solid #1a1a1a;
   border-radius: 0 0 10px 10px;
   max-width: 1050px;
   margin: 0 auto;
+  background-color: var(--bgColour2);
 }
 
 .footer1-logo {

@@ -621,8 +621,9 @@ footer a {
   transition: color 0.5s, fill 0.5s;
 }
 
-.footer1-links a:hover {
+footer a:hover {
   color: var(--mainBrandColour);
+  transition: color 0.5s;
 }
 
 /* Bottom Row */

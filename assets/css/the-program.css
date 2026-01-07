@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spaceLg);
-  flex-wrap: wrap;
+  gap: var(--spaceMd);
+  flex-wrap: nowrap;
 }
 
 #program-hero-heading {
@@ -40,29 +40,32 @@
   max-width: 520px;
   width: 100%;
   height: 400px;
+  flex: 1 1 420px;
 }
 
 .program-hero-image {
-  display: block;
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   object-position: center 20%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .program-hero-grid {
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
+  .program-hero-copy, .program-hero-image-card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 801px) {
   .program-hero-copy {
-    max-width: 100%;
-  }
-
-  .program-hero-image-card {
-    max-width: 100%;
+    flex: 1 1 420px;
   }
 }
 
@@ -125,6 +128,12 @@
 /* Ensure CTA button reads on light background (global styles handle most) */
 .program-built-cta .cta-button {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 768px) {
+  .program-built-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================
@@ -191,8 +200,13 @@
   text-align: center;
 }
 
-/* Responsive tweak */
-@media (max-width: 550px) {
+@media (max-width: 768px) {
+  .coaching-method-grid {
+    gap: var(--spaceSm);
+  }
+}
+
+@media (max-width: 570px) {
   .coaching-method-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -271,7 +285,7 @@
   justify-content: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 650px) {
   .what-you-could-achieve-grid {
     grid-template-columns: 1fr;
   }
@@ -354,8 +368,9 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .client-results-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 430px;
   }
 }

@@ -665,3 +665,23 @@ footer a {
 }
 /* footer1 Component Styles End */
 /* footer1 Component Styles End */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  will-change: opacity, transform;
+  transition-delay: 0.3s;
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out,
+    box-shadow 0.6s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out,
+    box-shadow 0.6s;
+}

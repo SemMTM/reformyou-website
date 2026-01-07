@@ -1,0 +1,235 @@
+/* ============================
+   HERO SECTION
+============================ */
+#hero {
+  position: relative;
+  padding: var(--sectionPadding);
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  margin-top: 60px;
+  min-height: 600px;
+}
+
+/* Background image + dark overlay */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      #1d201fda
+    ),
+    url('/assets/images/reformyou-banner.webp'); /* swap to your actual hero path */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Content layout */
+.hero-content {
+  max-width: 850px;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  margin-bottom: var(--spaceSmmd);
+  color: white;
+  background-color: #004e3786;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.hero-subtext {
+  margin: var(--spaceSmmd) 0 var(--spaceMd);
+  font-size: 1.05rem;
+  color: #e6e6e6;
+}
+
+/* ============================
+   CLIENT RESULTS SECTION
+============================ */
+#client-results {
+  background: var(--bgColour2);
+  text-align: center;
+}
+
+.client-results-heading {
+  max-width: 55rem;
+  margin: 0 auto var(--spaceSmmd);
+}
+
+/* Divider bar */
+.client-results-divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--mainBrandColour);
+  margin: 0 auto var(--spaceSmmd);
+  border-radius: 2px;
+}
+
+.client-results-intro {
+  max-width: 50rem;
+  margin: 0 auto var(--spaceLg);
+}
+
+/* Grid for 6 images */
+.client-results-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spaceLg);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spaceMd);
+  max-width: 75rem;
+}
+
+.client-result-item {
+  display: block;
+}
+
+.client-result-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+  height: 340px;
+}
+
+.client-result-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA */
+.client-results-cta {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .client-results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .client-result-card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .client-results-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* ============================
+   COACHING METHOD SECTION
+============================ */
+#coaching-method {
+  background: var(--bgColour3);
+  text-align: center;
+}
+
+#coaching-method .container {
+  max-width: 1050px;
+}
+
+.coaching-method-heading {
+  margin-bottom: var(--spaceLg);
+}
+
+/* Feature cards grid */
+.coaching-method-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spaceLg);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spaceSmmd);
+  max-width: var(--maxW);
+  text-align: left;
+  padding-top: var(--spaceSm);
+}
+
+.coaching-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: var(--spaceSmmd);
+}
+
+.coaching-card .icon-circle {
+  margin: 0 0 var(--spaceSm) 0;
+  background: var(--mainBrandColour);
+  width: 45px;
+  height: 45px;
+}
+
+.coaching-card .icon {
+  fill: var(--bgColour1);
+  height: 25px;
+  width: 25px;
+}
+
+.coaching-card-title {
+  margin-bottom: var(--spaceXs);
+}
+
+/* Testimonials */
+.coaching-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spaceSmmd);
+  margin: 0 auto var(--spaceLg);
+  max-width: var(--maxW);
+  text-align: left;
+}
+
+.coaching-testimonial {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: var(--spaceSmmd);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-stars {
+  color: #f5b301;
+  font-size: 1rem;
+  margin-bottom: var(--spaceXs);
+}
+
+.testimonial-text {
+  margin-bottom: var(--spaceXs);
+}
+
+.testimonial-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* CTA */
+.coaching-cta {
+  margin-top: var(--spaceSmmd);
+  text-align: center;
+}
+
+.coaching-cta-text {
+  font-size: 0.9rem;
+  margin-bottom: var(--spaceSm);
+}
+
+.coaching-cta .cta-button {
+  margin-top: var(--spaceXs);
+}
+
+/* Responsive tweak */
+@media (max-width: 550px) {
+  .coaching-method-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

@@ -103,7 +103,12 @@
     <div class="nav1-container">
       <!-- Logo -->
       <a href="/" class="nav1-logo">
-        <img alt="ReformYou" decoding="async"
+        <img alt="ReformYou" 
+          decoding="sync"
+          loading="eager"
+          fetchpriority="high"
+          width="133"
+          height="60"
           src="/assets/images/reformyou_logo_nobg.png">
       </a>
 
@@ -306,7 +311,11 @@
         <div class="footer1-brand">
           <!-- Logo -->
           <a href="/" class="nav1-logo">
-            <img alt="ReformYou" decoding="async"
+            <img alt="ReformYou" 
+              decoding="async"
+              loading="lazy"
+              width="133"
+              height="60"
               src="/assets/images/reformyou_logo_nobg.png">
           </a>
           <p class="footer-subline">Online Transformation Coaching for Professionals</p>

@@ -105,7 +105,12 @@
     <div class="nav1-container">
       <!-- Logo -->
       <a href="/" class="nav1-logo">
-        <img alt="ReformYou" decoding="async"
+        <img alt="ReformYou" 
+          decoding="sync"
+          loading="eager"
+          fetchpriority="high"
+          width="133"
+          height="60"
           src="/assets/images/reformyou_logo_nobg.png">
       </a>
 
@@ -219,6 +224,9 @@
               alt="Dom Oddy holding a drink bottle."
               class="about-coach-image"
               loading="lazy"
+              decoding="async"
+              height="520"
+              width="460"
             >
           </figure>
         </div>
@@ -356,6 +364,9 @@
               alt="Dom Oddy holding a drink bottle."
               class="understanding-image"
               loading="lazy"
+              decoding="async"
+              height="350"
+              width="350"
             >
           </figure>
         </div>
@@ -440,7 +451,11 @@
         <div class="footer1-brand">
           <!-- Logo -->
           <a href="/" class="nav1-logo">
-            <img alt="ReformYou" decoding="async"
+            <img alt="ReformYou" 
+              decoding="async"
+              loading="lazy"
+              width="133"
+              height="60"
               src="/assets/images/reformyou_logo_nobg.png">
           </a>
           <p class="footer-subline">Online Transformation Coaching for Professionals</p>

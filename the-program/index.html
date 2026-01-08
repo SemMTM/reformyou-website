@@ -29,14 +29,20 @@
   <link rel="stylesheet" href="/assets/css/the-program.css">
 
   <!-- Fonts -->
-  <link href="/assets/fonts/inter-v19-latin-300.woff2" rel="preload" as="font" 
+  <link href="/assets/fonts/inter-regular.woff2" rel="preload" as="font" 
   crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-600.woff2" rel="preload" as="font" 
+  <link href="/assets/fonts/inter-semibold.woff2" rel="preload" as="font" 
   crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-700.woff2" rel="preload" as="font" 
+  <link href="/assets/fonts/inter-bold.woff2" rel="preload" as="font" 
   crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-800.woff2" rel="preload" as="font" 
-  crossorigin type="font/woff2">
+
+  <!-- Preload Hero -->
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/reformyou_train_520.webp"
+    fetchpriority="high"
+  >
 
   <!-- Other head and Json data under here -->
   <!-- ===== Open Graph ===== -->
@@ -111,7 +117,7 @@
       <!-- Logo -->
       <a href="/" class="nav1-logo">
         <img alt="ReformYou" 
-          decoding="async"
+          decoding="sync"
           loading="eager"
           fetchpriority="high"
           width="133"
@@ -191,8 +197,9 @@
             alt=""
             class="program-hero-image"
             loading="eager"
-            decoding="sync"
             fetchpriority="high"
+            width="520"
+            height="400"
           >
         </figure>
       </div>

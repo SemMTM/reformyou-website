@@ -189,7 +189,7 @@
   list-style: none;
   padding: 0;
   margin: 0 auto var(--spaceLg);
-  max-width: 48rem;
+  max-width: 52rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--spaceSmmd);

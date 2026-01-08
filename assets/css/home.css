@@ -19,7 +19,7 @@
     linear-gradient(
       #1d201fda
     ),
-    url('/assets/images/reformyou-banner.webp'); /* swap to your actual hero path */
+    url('/assets/images/reformyou-banner.webp'); 
   background-size: cover;
   background-position: center;
   z-index: 0;

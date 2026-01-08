@@ -28,6 +28,14 @@
   <link rel="preload" href="/assets/css/about.css" as="style">
   <link rel="stylesheet" href="/assets/css/about.css">
 
+  <!-- Head image -->
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/reformyou-banner.webp"
+    fetchpriority="high"
+  >
+
   <!-- Fonts -->
   <link href="/assets/fonts/inter-v19-latin-300.woff2" rel="preload" as="font" 
   crossorigin type="font/woff2">
@@ -85,8 +93,6 @@
     ]
   }
   </script>
-
-
 </head>
 
 <body> 
@@ -206,8 +212,8 @@
     <section id="about-coach" aria-labelledby="about-coach-heading">
       <div class="container about-coach-grid">
         <!-- Image -->
-        <div class="reveal img-con">
-          <figure class="about-coach-image-card hover-up">
+        <div class="img-con">
+          <figure class="about-coach-image-card reveal">
             <img
               src="/assets/images/reformyou_dom_drink.webp"
               alt="Dom Oddy holding a drink bottle."

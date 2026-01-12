@@ -1,0 +1,229 @@
+.container {
+  max-width: 850px;
+}
+
+#nav1-navigation {
+  box-shadow: none;
+}
+
+.header-btn {
+  display: block;
+}
+
+.header-btn .cta-button {
+  padding: 0.6rem 1.2rem;
+}
+
+.links-page-heading {
+  max-width: 55rem;
+  margin: 0 auto var(--spaceSmmd);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* ============================
+   PROGRAM HERO
+============================ */
+#program-hero {
+  background: var(--bgColour2);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 3.4vw, 4rem);
+}
+
+.program-hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spaceMd);
+  flex-wrap: nowrap;
+}
+
+#program-hero-heading {
+  padding-bottom: var(--spaceSmmd);
+}
+
+.program-hero-copy {
+  max-width: 520px;
+}
+
+.program-hero-badge {
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  margin-bottom: var(--spaceSmmd);
+  color: white;
+  background-color: var(--mainBrandColour);
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.program-hero-image-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 100%;
+  height: 400px;
+  flex: 1 1 420px;
+}
+
+.program-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  object-position: center 20%;
+}
+
+.program-built-cta {
+  margin-top: var(--spaceMd);
+  display: flex;
+  justify-content: center;
+}
+
+.program-built-cta .cta-button {
+  width: 100%;
+  text-align: center;
+}
+
+/* Ensure CTA button reads on light background (global styles handle most) */
+.program-built-cta .cta-button {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 650px) {
+  .program-hero-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .program-hero-copy, .program-hero-image-card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 801px) {
+  .program-hero-copy {
+    flex: 1 1 420px;
+  }
+}
+
+/* ============================
+   STATS SECTION
+============================ */
+#stats {
+  background: var(--bgColour3);
+  text-align: center;
+}
+
+.stats-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spaceSm);
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.stat-value {
+  font-size: clamp(2.3rem, 3vw, 2.8rem);
+  font-weight: 600;
+  color: var(--mainBrandColour);
+}
+
+.stat-item {
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: var(--spaceSm);
+}
+
+.stat-label {
+  color: var(--textColour1);
+}
+
+@media (max-width: 550px) {
+  .stats-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* ============================
+   CLIENT RESULTS SECTION
+============================ */
+#client-results {
+  background: var(--bgColour1);
+  text-align: center;
+}
+
+/* Grid for 6 images */
+.client-results-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spaceLg);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spaceSm);
+  max-width: 60rem;
+}
+
+.client-result-item {
+  display: block;
+}
+
+.client-result-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+  height: 290px;
+}
+
+.client-result-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CTA */
+.client-results-cta {
+  text-align: center;
+}
+
+.program-built-cta .sub-btn {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .client-results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .client-result-card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .client-results-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+#site-footer {
+  padding: 0;
+}
+
+#final-cta .main {
+  width: 100%;
+}
+
+#final-cta .sub-btn {
+  background-color: #ffffff00;
+  color: white;
+  border: 1px solid white;
+}

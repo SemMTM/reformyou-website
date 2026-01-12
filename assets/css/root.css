@@ -10,7 +10,7 @@
   --bgColour3: #F4F2EF;
   --textColour1: #282828;  
   --maxW: 80rem;
-  --sectionPadding: clamp(6rem, 8vw, 7rem) 1rem;
+  --sectionPadding: clamp(5rem, 8vw, 7rem) 1rem;
   --headerFont: "Inter", system-ui, sans-serif; 
   --bodyFont: "Inter", system-ui, sans-serif; 
 }

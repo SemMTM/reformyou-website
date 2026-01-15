@@ -166,7 +166,7 @@ h1 {
 /* ============================
    CLIENT RESULTS SECTION
 ============================ */
-#client-results {
+#client-results, #client-reviews {
   background: var(--bgColour1);
   text-align: center;
 }

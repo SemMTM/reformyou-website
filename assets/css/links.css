@@ -31,7 +31,10 @@ section {
 ============================ */
 #program-hero {
   background: var(--bgColour2);
-  margin-top: 50px;
+}
+
+#program-hero .container {
+  margin-top: 65px;
 }
 
 h1 {

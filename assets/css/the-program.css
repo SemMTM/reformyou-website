@@ -41,6 +41,9 @@
   height: 400px;
   flex: 1 1 420px;
   overflow: hidden;
+  position: relative;
+  line-height: 0;
+  font-size: 0;
 }
 
 .program-hero-image {
@@ -49,6 +52,9 @@
   object-fit: cover;
   object-position: center 20%;
   display: block;
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
 }
 
 @media (max-width: 800px) {

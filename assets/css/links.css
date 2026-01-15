@@ -31,6 +31,7 @@ section {
 ============================ */
 #program-hero {
   background: var(--bgColour2);
+  margin-top: 50px;
 }
 
 h1 {

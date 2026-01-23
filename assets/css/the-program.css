@@ -1,9 +1,12 @@
 /* ============================
    PROGRAM HERO
 ============================ */
+.nav1-ul li a {
+  color: var(--textColour1);
+}
+
 #program-hero {
   background: var(--bgColour2);
-  margin-top: 60px;
 }
 
 .program-hero-grid {
@@ -12,6 +15,7 @@
   justify-content: center;
   gap: var(--spaceMd);
   flex-wrap: nowrap;
+  margin-top: 60px;
 }
 
 #program-hero-heading {

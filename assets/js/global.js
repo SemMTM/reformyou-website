@@ -6,14 +6,20 @@
   const navHeader = document.querySelector('#nav1-navigation');
   const overlay = document.getElementById('nav-overlay');
 
+  if (navHeader) {
+    const onScroll = () => {
+      navHeader.classList.toggle('is-scrolled', window.scrollY > 10);
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   const closeMainNav = () => { 
     navToggle.classList.remove('active'); 
     navHeader.classList.remove('nav1-active'); 
     body.classList.remove('nav1-open'); 
     navToggle.setAttribute('aria-expanded', 'false'); 
-    if (overlay) overlay.classList.remove('active'); 
-    // also close any open submenus when nav closes
-    document.querySelectorAll('.nav1-has-submenu.open').forEach((li) => closeItem(li)); // ADDED
   };
   
   // Main Aria Nav Toggle
@@ -25,6 +31,23 @@
     navToggle.setAttribute(
       "aria-expanded", navAria === "false" ? "true" : "false")
     overlay.classList.toggle('active');
+
+    const shouldBeScrolled =
+      window.scrollY > 10 || navHeader.classList.contains('nav1-active');
+
+    if (shouldBeScrolled) {
+      navHeader.classList.add('is-scrolled');
+    } else {
+      setTimeout(() => {
+        // re-check to avoid race conditions
+        if (
+          window.scrollY <= 10 &&
+          !navHeader.classList.contains('nav1-active')
+        ) {
+          navHeader.classList.remove('is-scrolled');
+        }
+      }, 300);
+    }
   });
 
   if (overlay) { 

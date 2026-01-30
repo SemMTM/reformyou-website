@@ -26,6 +26,14 @@ section {
   letter-spacing: 2px;
 }
 
+#nav1-navigation {
+  background: var(--bgColour2);
+}
+
+.nav1-logo {
+  color: var(--textColour1);
+}
+
 /* ============================
    PROGRAM HERO
 ============================ */
@@ -243,4 +251,14 @@ h1 {
 
 .final-cta-content {
   gap: var(--spaceSm);
+}
+
+/* ============================
+   CLIENT REviws SECTION
+============================ */
+
+@media (min-width: 768px) {
+  #client-reviews .client-results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

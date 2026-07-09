@@ -84,7 +84,6 @@ h1 {
 .program-hero-image-card {
   margin: 0;
   background: #ffffff;
-  border-radius: 8px;
   max-width: 520px;
   overflow: hidden;
   width: 100%;
@@ -132,7 +131,8 @@ h1 {
     height: 320px;
   }
 
-  .program-hero-copy, .program-hero-image-card {
+  .program-hero-copy,
+  .program-hero-image-card {
     max-width: 100%;
   }
 }
@@ -190,7 +190,8 @@ h1 {
 /* ============================
    CLIENT RESULTS SECTION
 ============================ */
-#client-results, #client-reviews {
+#client-results,
+#client-reviews {
   background: var(--bgColour1);
   text-align: center;
 }

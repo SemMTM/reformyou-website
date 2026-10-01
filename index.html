@@ -63,16 +63,87 @@
       {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://reformyouprogram.co.uk/#organization",
         "name": "ReformYou Program",
         "legalName": "ReformYou",
         "url": "https://reformyouprogram.co.uk/",
-        "logo": "https://reformyouprogram.co.uk/assets/images/reformyou_logo.webp",
-        "founder": { "@type": "Person", "name": "Dom Oddy" },
+        "description": "Personalised online transformation coaching for busy professionals who want to lose fat, build muscle and create sustainable habits.",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://reformyouprogram.co.uk/#logo",
+          "url": "https://reformyouprogram.co.uk/assets/images/reformyou_logo.webp",
+          "contentUrl": "https://reformyouprogram.co.uk/assets/images/reformyou_logo.webp",
+          "caption": "ReformYou Program"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://reformyouprogram.co.uk/assets/images/reformyou_socialcard.jpg"
+        },
         "email": "support@reformyouprogram.com",
+        "founder": {
+          "@id": "https://reformyouprogram.co.uk/#dom-oddy"
+        },
+        "areaServed": "Worldwide",
         "sameAs": [
-          "https://www.linkedin.com/in/dom-oddy-aa098a231/",
-          "https://www.instagram.com/dominicoddy/?hl=en"
-        ]
+          "https://www.instagram.com/dominicoddy/?hl=en",
+          "https://www.linkedin.com/in/dom-oddy-aa098a231/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "support@reformyouprogram.com",
+          "contactType": "customer support",
+          "availableLanguage": "English",
+          "areaServed": "Worldwide"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://reformyouprogram.co.uk/#website",
+        "url": "https://reformyouprogram.co.uk/",
+        "name": "ReformYou Program",
+        "description": "Online transformation coaching for busy professionals.",
+        "inLanguage": "en-GB",
+        "publisher": {
+          "@id": "https://reformyouprogram.co.uk/#organization"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://reformyouprogram.co.uk/#webpage",
+        "url": "https://reformyouprogram.co.uk/",
+        "name": "ReformYou | Online Transformation Coaching for Busy Professionals",
+        "description": "Online coaching for busy professionals who want to lose fat, build muscle and create sustainable habits through personalised training, nutrition and weekly accountability.",
+        "inLanguage": "en-GB",
+        "isPartOf": {
+          "@id": "https://reformyouprogram.co.uk/#website"
+        },
+        "about": {
+          "@id": "https://reformyouprogram.co.uk/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://reformyouprogram.co.uk/#online-coaching-service"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://reformyouprogram.co.uk/#primary-image",
+          "url": "https://reformyouprogram.co.uk/assets/images/reformyou-banner.webp",
+          "contentUrl": "https://reformyouprogram.co.uk/assets/images/reformyou-banner.webp",
+          "width": 1190,
+          "height": 793,
+          "caption": "Dom Oddy coaching a client through a strength training session"
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://reformyouprogram.co.uk/"
+        }
       }
     </script>
   </head>
